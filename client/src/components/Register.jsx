@@ -30,7 +30,7 @@ function Register() {
 
     try {
       const response = await axios.post(
-        "https://jobtrack-backend-8z23.onrender.com/api/auth/register",
+        "https://jobtrack-backend-82z3.onrender.com/api/auth/register",
         form
       );
 
