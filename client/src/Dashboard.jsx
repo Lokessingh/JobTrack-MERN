@@ -17,7 +17,7 @@ import {
 
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api/jobs";
+const API_URL = "https://jobtrack-backend-8z23.onrender.com/api/jobs";
 
 const chartColors = ["#6258E8", "#10B981", "#F59E0B", "#EF4444"];
 
