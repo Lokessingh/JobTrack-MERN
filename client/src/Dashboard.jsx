@@ -109,7 +109,7 @@ const response = await axios.get(API_URL, {
     } catch (err) {
       setError(
         err.response?.data?.message ||
-          "Applications load nahi ho paayi. Backend aur API connection check karo."
+          "Failed to load applications. Please check the backend server and API connection."
       );
     } finally {
       setLoading(false);
@@ -186,7 +186,7 @@ if (editingJob) {
     } catch (err) {
       setError(
         err.response?.data?.message ||
-          "Application save nahi hui. Backend routes aur database schema check karo."
+          "Failed to save the application. Please check the backend server and database connection."
       );
     }
   }
@@ -250,7 +250,7 @@ await axios.delete(`${API_URL}/${id}`, {
     } catch (err) {
       setError(
         err.response?.data?.message ||
-          "Application delete nahi hui."
+          "Failed to delete the application. Please try again."
       );
     }
   }

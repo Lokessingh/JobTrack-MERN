@@ -37,7 +37,7 @@ function Login() {
       const { token, user } = response.data;
 
       if (!token) {
-        setError("Login successful response mein token nahi mila.");
+        setError("Login was successful, but no authentication token was received.");
         return;
       }
 
